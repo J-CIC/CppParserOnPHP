@@ -7,7 +7,6 @@
 传入两个字符串，返回值为true表示相同，false表示不同
 
 示例:
-
     $string = "C(int i,int j,int k):A(i),b1(j)";
     $string2 = "C ( int i,\nint j, \n\nint   k):\nA(i),b1(j)";
     checkInterface($string,$string2);
