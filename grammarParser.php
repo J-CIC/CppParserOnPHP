@@ -1,8 +1,8 @@
 <?php
 /**
-* GrammarPhraser By CIC
+* GrammarParser By CIC
 */
-class GrammarPhraser
+class GrammarParser
 {
     public $keywordUnitArray = array();
     public $operatorUnitArray = array();
@@ -146,9 +146,9 @@ function getCharpos($str, $char){
        return $arr;
 }
 function checkInterface($stringA,$stringB){
-    $helper = new GrammarPhraser($stringA);
+    $helper = new GrammarParser($stringA);
     $helper->generateList();
-    $helper2 = new GrammarPhraser($stringB);
+    $helper2 = new GrammarParser($stringB);
     $helper2->generateList();
     // echo "A字符串是: ".$stringA."\n";
     // echo "B字符串是: ".$stringB."\n";
